@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fashionista - Home</title>
+    <title>Contact Us - Fashionista</title>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -21,18 +21,24 @@
         <nav>
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="new_arrivals.html">New Arrivals</a>
+              <a class="nav-link" href="index.html#new-arrivals"
+                >New Arrivals</a
+              >
             </li>
-            <li class="nav-item"><a class="nav-link" href="#men">Men</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#women">Women</a>
+              <a class="nav-link" href="index.html#men">Men</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#sale">Sale</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="index.html#women">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#sale">Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -44,60 +50,45 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section
-      id="home"
-      class="hero text-center d-flex align-items-center justify-content-center"
-    >
-      <div class="hero-text container">
-        <h2>Welcome to Fashionista</h2>
-        <p>Your one-stop destination for the latest in fashion trends!</p>
-        <a href="new_arrivals.html" class="btn btn-primary"
-          >Shop New Arrivals</a
-        >
-      </div>
-    </section>
-
-    <!-- Introduction Section -->
-    <section id="introduction" class="section container my-5 text-center">
-      <h2>About Fashionista</h2>
-      <p class="lead">
-        At Fashionista, we bring you the best collections of clothing,
-        accessories, and lifestyle products. We believe in empowering you to
-        look your best, always.
+    <!-- Contact Section -->
+    <section id="contact" class="section container text-center my-5">
+      <h2>Contact Us</h2>
+      <p class="mb-4">
+        We'd love to hear from you! Please fill out the form below, and we’ll
+        get back to you as soon as possible.
       </p>
-      <p>
-        Our collections are curated with love and care to ensure you find your
-        unique style. From the latest trends to timeless pieces, Fashionista has
-        it all.
-      </p>
-    </section>
-
-    <!-- Login Section -->
-    <section id="login" class="section container text-center my-5">
-      <h2>Log In</h2>
-      <form action="login_action.php" method="POST" class="w-50 mx-auto">
+      <form action="submit_form.php" method="POST" class="w-50 mx-auto">
         <div class="form-group">
-          <label for="username">Username:</label>
+          <label for="name">Name:</label>
           <input
             type="text"
-            id="username"
-            name="username"
+            id="name"
+            name="name"
             class="form-control"
             required
           />
         </div>
         <div class="form-group">
-          <label for="password">Password:</label>
+          <label for="email">Email:</label>
           <input
-            type="password"
-            id="password"
-            name="password"
+            type="email"
+            id="email"
+            name="email"
             class="form-control"
             required
           />
         </div>
-        <button type="submit" class="btn btn-primary mt-3">Log In</button>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            class="form-control"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Send Message</button>
       </form>
     </section>
 
