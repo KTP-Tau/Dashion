@@ -44,7 +44,7 @@
         </nav>
         <div class="header-icons">
           <a href="#search"><i class="icon-search">🔍</i></a>
-          <a href="#cart"><i class="icon-cart">🛒</i></a>
+          <a href="./checkout.html"><i class="icon-cart">🛒</i></a>
           <a href="#account"><i class="icon-user">👤</i></a>
         </div>
       </div>
@@ -57,53 +57,8 @@
         Explore the latest trends and styles, freshly added to our collection.
         Update your wardrobe with the season’s must-haves!
       </p>
-      <div class="row">
-        <!-- Product 1 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="card product-card">
-            <img
-              src="img/product1.jpg"
-              class="card-img-top"
-              alt="Stylish Jacket"
-            />
-            <div class="card-body text-center">
-              <h3 class="card-title">Stylish Jacket</h3>
-              <p class="card-text">$49.99</p>
-              <a href="#cart" class="btn btn-success">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <!-- Product 2 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="card product-card">
-            <img
-              src="img/product2.jpg"
-              class="card-img-top"
-              alt="Elegant Dress"
-            />
-            <div class="card-body text-center">
-              <h3 class="card-title">Elegant Dress</h3>
-              <p class="card-text">$79.99</p>
-              <a href="#cart" class="btn btn-success">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <!-- Product 3 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="card product-card">
-            <img
-              src="img/product3.jpg"
-              class="card-img-top"
-              alt="Casual Sneakers"
-            />
-            <div class="card-body text-center">
-              <h3 class="card-title">Casual Sneakers</h3>
-              <p class="card-text">$59.99</p>
-              <a href="#cart" class="btn btn-success">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <!-- Additional products can follow in the same format -->
+      <div class="row shop-items">
+        <!-- Insert product cards here with new_arrivals.js object -->
       </div>
     </section>
 
@@ -121,5 +76,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="./new_arrivals.js"></script>
   </body>
 </html>
