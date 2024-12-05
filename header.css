@@ -1,0 +1,63 @@
+/* Header Section Styles */
+header {
+  background-color: #fff; /* Background color of the header */
+  border-bottom: 1px solid #ccc; /* Subtle bottom border for separation */
+  padding: 15px 0; /* Padding for spacing */
+  position: sticky; /* Makes the header stick to the top when scrolling */
+  top: 0;
+  z-index: 1000; /* Ensures the header stays above other elements */
+  width: 100%;
+}
+
+/* Logo Styles */
+header .logo h1 {
+  font-size: 24px; /* Font size for the logo text */
+  font-weight: bold; /* Bold font weight for emphasis */
+  margin: 0; /* Remove extra margins */
+  color: #333; /* Dark color for the logo */
+}
+
+/* Navigation Bar Styles */
+header nav {
+  display: flex; /* Align nav items horizontally */
+}
+
+header .nav {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Display nav items inline */
+}
+
+header .nav .nav-item {
+  margin-right: 20px; /* Space between navigation links */
+}
+
+header .nav .nav-link {
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Font size for links */
+  color: #333; /* Default link color */
+  font-weight: 500; /* Slightly bold for visibility */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+header .nav .nav-link:hover {
+  color: #5c4b51; /* Change link color on hover */
+}
+
+/* Header Icons */
+header .header-icons {
+  display: flex; /* Align icons horizontally */
+  align-items: center; /* Center icons vertically */
+}
+
+header .header-icons a {
+  margin-left: 15px; /* Space between icons */
+  font-size: 18px; /* Adjust icon size */
+  text-decoration: none; /* Remove underline from icon links */
+  color: #333; /* Icon color */
+}
+
+header .header-icons a:hover {
+  color: #5c4b51; /* Change icon color on hover */
+}
